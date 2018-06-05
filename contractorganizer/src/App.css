@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Bungee Shade";
+}
+
+.deleteAll {
+  text-align: right;
+}
