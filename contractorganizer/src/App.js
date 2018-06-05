@@ -23,8 +23,9 @@ class App extends Component {
       for (let contract in contracts) {
         newState.push({
           id: contract, //add the id key for the list so there is a reference avialble making it easier to delete
-          name: contracts[contract].name,
-          company: contracts[contract].company,
+          contractName: contracts[contract].contractName,
+          promisor: contracts[contract].promisor,
+          promisee: contracts[contract].promisee,
           details: contracts[contract].details
         });
       }
@@ -50,8 +51,9 @@ class App extends Component {
 
       tempList.push({
         id: pushedKey,
-        name: contract.name,
-        company: contract.company,
+        contractName: contract.contractName,
+        promisor: contract.promisor,
+        promisee: contract.promisee,
         details: contract.details
       });
 
@@ -87,6 +89,7 @@ class App extends Component {
             Delete All
           </Button>
         </div>
+
         <DisplayContract
           allContracts={this.state.contractList}
           deleteContract={contractId => this.removeContract(contractId)}

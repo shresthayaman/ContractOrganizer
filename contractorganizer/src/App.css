@@ -11,3 +11,10 @@ h1 {
 .deleteAll {
   text-align: right;
 }
+
+.displayList {
+  display: inLine-flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
